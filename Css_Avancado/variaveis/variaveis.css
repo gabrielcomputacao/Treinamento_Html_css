@@ -1,0 +1,12 @@
+/* no vscode baixar uma extensao para ajudar com o css, procurar por
+    css html support emel, ajuda com classes css
+*/
+
+:root{
+    --amarelo: #FFCB47;
+    --branco:#FFFFFF;
+}
+/* para usar dentro do projeto usar: 
+    var(--amarelo)
+    var(--branco)
+*/

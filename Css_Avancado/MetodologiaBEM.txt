@@ -1,0 +1,21 @@
+BEM é uma metodologia, uma convenção, um padrão de nomenclatura que 
+utilizamos para manter o nosso projeto simples e organizado. 
+O principal objetivo dessa metodologia, além de manter os códigos simples 
+na hora da escrita e (principalmente) da manutenção.
+
+A sigla BEM significa Block Element Modifier
+
+Bloco Elemento Modificador — esses 3 pilares são as bases dessa metodologia
+
+Um elemento sempre será uma parte, um complemento da estrutura do bloco. 
+
+Os modificadores são estados que os nossos blocos ou elementos poderão ter: 
+um botão com diferentes aparências, uma situação de destaque.
+
+Nossa primeira classe sempre será o bloco: .list
+
+Para criarmos os elementos, utilizamos 
+2 underlines ( __ ) após o nome do nosso bloco: .list__item, .list__title
+
+Para criarmos os modificadores, utilizamos 2 traços ( — ) no nosso bloco 
+ou elemento: .list__item--highlight, .list__author--active
