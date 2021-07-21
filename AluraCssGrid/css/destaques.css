@@ -1,0 +1,117 @@
+.destaque{
+    /* definindo o tipo de display como grid para ele pegar as propriedades grid */
+    display: grid;
+
+    grid-gap: 2px;/* espaçamento entre as grids que tiver fronteira com o conteudo
+    de outra grid */
+
+    /* definindo as colunas e as linha que ira ter na parte destaque */
+    grid-template-columns: 25% 25% 25% 25%;
+
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    /* 100 vh é o tamanho do browser inteiro (view port read)*/
+    height: calc(100vh - 50px);
+}
+
+.caixa{
+    /* classe vinculada junto ao destaques_secundarios */
+    display: flex;
+    align-items: flex-end;
+    background: #dcdcdc;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.destaques_titulo{
+    background: rgb(0,0,0,.5);
+    color: #fdfdfd;
+    padding: .6em ;
+    text-align: center;
+    width: 100%;
+    
+    margin: 0;
+}
+
+
+.destaques_principal{
+    /* Quando se usa dois anderlines( __ ), está fazendo uso de uma metodologia
+    que mostra que tudo depois dos dois anderlines é um (elemento)bloco do 
+    primeiro é uma sub-area do primeiro.No caso usei uma porque nao sabia dessa metodologia
+    */
+    background-image:url(../imagens/img/fortnite.jpg);
+    background-repeat: no-repeat;/* nao repetir a imagem varias vezes */
+    background-size: cover;/* cobrir toda a div */
+    background-position: center; /* posicionar no centro da div */
+    
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* OBS: no css grid layout ele começa na coluna 1 e vai até a 3 sem
+    preencher a 3 coluna */
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.destaques_secundario:nth-child(2) {
+    /* maneira de fazer os codigos do background image em uma coluna
+        1° postion
+        2° size
+        3° repeat
+    */
+    background: url("../imagens/img/pubg.jpg") center / cover no-repeat;
+    
+    /*maneira reduzida de fazer o colum start e end   */
+    grid-column: 4/ 4;
+    
+    /* maneira reduzida de fazer o row start e row end */
+    grid-row: 1 / 1;
+
+}
+
+.destaques_secundario:nth-child(3){
+    background: url("../imagens/img/slack.png") center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+}
+
+.destaques_secundario:nth-child(4){
+    background: url("../imagens/img/whatsapp.png") center / cover no-repeat;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+.destaques_secundario:nth-child(5){
+    background: url("../imagens/img/cs-go.jpg") center / cover no-repeat;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+.destaques_categorias{
+    grid-column: 1 /3;
+    grid-row: 3 / 3;
+}
+
+.destaques_categoria_lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.destaques_categorias_item{
+    align-items: center;
+    background: #fdfdfd;
+    border-left: 5px solid transparent;
+    color:#333;
+    display: flex;/* sem o flex o aling-items nao funciona, so para elementos flex */
+    padding: 1rem;
+    width: 44%;
+}
+
+.destaques_categorias_link{
+    color: inherit;/* herda do componente pai que no caso é a li */
+}

@@ -1,0 +1,40 @@
+.app{
+    background-color: seashell;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* define as areas dentro da classe principal no caso
+    dentro do body que foi colocado com a classe app */
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: auto;/* tamanho das colunas, que sera automatico */
+    grid-template-rows: 50px auto auto;/* definindo o tamanho das linhas que
+     no caso sao as areas*/
+}
+
+.cabecalho{
+    grid-area: cabecalho;/* indicar que essa é a area escohida e feita no template
+    area,afirma que essa se trata do nome dado no grid-template-area */
+
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+
+.conteudo{
+    grid-area: conteudo;
+
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #fdfdfd;
+    color: #333;
+    text-align: center;
+    padding: 2px;
+    font-size:14px ;
+    height: 22px;
+}

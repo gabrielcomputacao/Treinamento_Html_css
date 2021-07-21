@@ -1,0 +1,249 @@
+body{
+    margin: 0px;
+     
+}
+#logoDell{
+    height: 35px;
+    width: 70px;
+}
+#buttonBuscar{
+    width: 60px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 2px;
+    color: honeydew;
+    background-color: black;
+}
+.navegacao{
+    padding: 5px;
+    border-bottom: 2px solid #EAEAEA;
+}
+.navegacao div{
+    display:inline-block;
+}
+.divInput{
+    position: relative;
+    display: inline-block;
+    top: 0;
+}
+.login{
+    margin: 15px;
+    margin-right: 30px;
+    padding: 5px;
+}
+.login picture{
+    margin-left: 10px; 
+}
+.login picture a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #444444;
+}
+
+input{
+    margin: 0px;
+    padding: 0;
+    height: 25px;
+    width: 690px;
+}
+
+.divFigura{
+    margin: 10px;
+    margin-left: 80px;
+    margin-right: 0px;
+}
+
+#divLinks{
+    box-sizing: border-box;
+    margin-left: 160px ;
+}
+#divLinks a{
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #9F9F9F;
+}
+
+/*---------- main ----- */
+.opcoes{
+    width: 100%;
+    border: 0;
+    border-bottom: solid 1px #9F9F9F;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+.opcoes div ul{
+    border: 0;
+    margin: 0;
+    
+}
+.opcoes li{
+    display: inline-block;
+    padding: 10px;
+    height: 80px;
+    width: 90px;
+    margin-left: 60px;
+}
+
+.opcoes li img{
+    height: 42px;
+
+}
+
+.opcoes li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+.opcoes div :hover{
+    border-left: solid 1px #9F9F9F;
+    border-right:solid 1px #9F9F9F;
+    color: #007DB8; 
+}
+.anuncios{
+    display: inline-block;
+    margin-top: 110px;
+    width: 48%;
+}
+.anuncios img{
+    width: 499px;
+}
+
+[texto]{
+  position: relative;
+  bottom: 150px;
+}
+
+[texto] a {
+    text-decoration: none;
+    color: #007DB8;
+    font-size: 20px;
+}
+
+[abaixo]{
+    margin-left: 20px;
+}
+.suporte{
+    text-align: center;
+    font-size: 31px;
+    font-size: roboto,Arial;
+}
+
+.suporte a{
+    text-decoration: none;
+    color: #007DB8;
+    font-size: 20px;
+}
+
+.suporte p {
+    margin: 0;
+}
+
+.sugestoes{
+    margin-top: 20px;
+    border: solid 1px black;
+    height: 50px;
+    background-color: #EEEEEE;
+}
+
+.sugestoes a{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    top: 15px;
+    color: #444444;
+}
+#linguas{
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+    border: none;
+}
+
+.final{
+    height: 50px;
+    background-color:#444444;
+    padding-left: 25px;
+}
+
+.final a{
+    position: relative;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    top: 10px;
+}
+
+.toggle{
+    display: none;
+    border: none;
+    background-color: white;
+}
+
+
+
+@media(max-width:1200px){
+    .toggle{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+        top: 12px;  
+    }
+    .login picture{
+        display: none;
+    }
+}
+
+@media(max-width:1060px){
+    #texto{
+        width: 490px;
+    }
+    [texto]{
+        width: 350px;
+        margin-left: 90px;
+    }
+    .login{
+        display: none;
+    }
+}
+@media(max-width:810px){
+    #texto{
+        width: 350px;
+        
+    }
+}
+
+@media(max-width:690px){
+    #texto{
+        width: 245px;
+    }
+    .divFigura{
+        margin-left: 10px;
+    }
+    #divLinks{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width:450px){
+    #fixado{
+        display: none;
+    }
+    .divInput #texto,button{
+        display: none;
+    }
+    #divLinks{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .toggle{
+        top: 1px;
+        margin-left: 90px;
+    }
+}

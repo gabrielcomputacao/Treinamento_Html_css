@@ -1,0 +1,76 @@
+.populares{
+    padding: 3rem 0;
+}
+
+.populares__conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area:card-conteudo;
+    padding: 1px 0;
+}
+
+
+
+.populares__card{
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas: 
+    "card-imagem"
+    "card-corpo";
+    grid-template-columns: 100%;/* definindo quantas colunas vai ter */
+    grid-template-rows: 173px auto;/* como as areas ja mostrou que tera duas areas
+    aqu estamos colocando o tamanho para elas */
+    margin-right: 4px;
+    
+}
+
+.populares__card___imagem{
+    grid-area:card-imagem;/* onde deve ficar */
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo{
+    grid-area:card-corpo;
+    padding: 0.75rem;
+    grid-template-areas: 
+    "card-cabecalho"
+    "card-conteudo";
+    grid-template-rows: 50px auto;
+    grid-row-gap: 2px;
+}
+
+.populares__card___titulo{
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data{
+    color: #808080;
+    font-size: 0.93rem;
+}
+
+
+.populares__card___descricao{
+    color: #333;
+    text-align: justify;
+    line-height: 1.5;/* distancia entre os paragrafos */
+    margin: 2px 0;
+}
+
+.populares__cabecalho{
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.populares__titulo{
+    margin-top: 10px;
+}
+
+.populares__botao{
+    background: transparent;
+    border: none;
+    color: #333;
+}
