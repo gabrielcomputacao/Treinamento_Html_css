@@ -1,0 +1,32 @@
+colocando as classes do bootstrap , ja vem com o css pronto
+
+img-responsive -deixa a imagem responsiva na tela
+conteiner- contem a div ja colocando padding
+
+data-toggle="collapse" = fala qual elemento é o pai que quando clicar nele vai 
+fazer o evento de colapse(sumir)
+
+ data-target="#primeiro-paragrafo" = qual vai ser o elemento que vai sofrer a 
+ açao do pai, na mesma linha do pai
+
+ no filho tem que ter a classe collapse e um id para identificar
+
+ DICA: seleciona uma tag ctrl+D vai pegando todas tags iguais a selecionada
+
+ paineis no bootstrap
+
+ pode se envolver em um classe panel-group para fazer um grupo de paineis
+ usar classe panel panel-default para envolver o head e o body
+ panel-heading cabeca do painel
+ panel-body corpo do panel
+panel-title da um title dentro de uma tag dentro de um panel
+
+Para fazer todos os paineis com o mesmo comportamento
+associar ao painel group que e o pai de todos os paineis um id
+e dentro dos paineis colocar data-parent para que todos sofram as açoes como 
+o primeiro collapsar e outros fecharem assim que um abrir
+
+
+
+figure - nova tag do html para envolver figura e titulos de figuras ao inves de div
+e figcaption - colocar legendas nessas imagens dentro da tag figure
