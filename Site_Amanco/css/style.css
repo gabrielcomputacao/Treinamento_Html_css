@@ -1,0 +1,61 @@
+.body{
+    padding: 0;
+    border: 0;
+}
+.pagina{
+    display: grid;
+    margin: 0;
+    grid-template-areas: 
+    "cabecalho"
+    "imagem"
+    "corpo"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 70px auto auto;
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    background: #4DB79D;
+    padding: 5px;
+}
+.links{
+    display: flex;
+    position: relative;
+    height: 50px;
+    top: 24px;
+}
+
+
+.links a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.links :last-child{
+    position: relative;
+    bottom: 15px; 
+}
+
+svg{
+    display: inline-block;
+    overflow: visible;
+    height: 1em;
+    padding-top: 8px;
+}
+
+.svg-span{
+    display: inline-block;
+    border: 2px solid transparent;
+    padding:  16px;
+    padding-bottom: 4px;
+    border-radius: 50%;
+    color: white;
+    height:1em;
+    margin-left: 380px;
+    background: #3DA087;
+}
