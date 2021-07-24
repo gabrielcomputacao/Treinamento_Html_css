@@ -1,6 +1,18 @@
+#font-face{
+    font-family: 'font';
+    src: url("../fontes/OpenSerif-Book.ttf") format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
 .body{
     padding: 0;
     border: 0;
+}
+a{
+    text-decoration: none;
 }
 .pagina{
     display: grid;
@@ -8,10 +20,11 @@
     grid-template-areas: 
     "cabecalho"
     "imagem"
+    "explorar"
     "corpo"
     "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 70px auto auto;
+    grid-template-rows: 80px auto auto auto auto;
 }
 
 .cabecalho{
@@ -23,7 +36,7 @@
     display: flex;
     position: relative;
     height: 50px;
-    top: 24px;
+    top: 22px;
 }
 
 
@@ -32,8 +45,8 @@
     margin-left: 30px;
     color: white;
     font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: 'font';
+    font-weight: 800;
 }
 
 .links :last-child{
@@ -56,6 +69,99 @@ svg{
     border-radius: 50%;
     color: white;
     height:1em;
-    margin-left: 380px;
+    margin-left: 340px;
     background: #3DA087;
+}
+
+.imagem{
+    grid-area: imagem;
+}
+
+.imagem-principal{
+    display: flex;
+    background-image:url(../imagens_normal/tubo-agua-quente.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.imagem__amanco{
+    display: block;
+    position: relative;
+    top: 65px;
+    height:140px ;
+    
+}
+
+.imagem__amanco img{
+    width: 570px;
+    height: 130px;
+}
+
+.imagem__escrita{
+    position:relative;
+    text-align: center;
+    width: auto;
+    height: 250px;
+    top: -30px;
+}
+
+.imagem__escrita :first-child{
+    font-family: 'font';
+    color: white;
+    font-size: 90px;
+    margin: 0;
+}
+
+.imagem__escrita :last-child{
+    color: white;
+    font-family: 'font';
+    font-size: 20px;
+}
+.separacao{
+    height: 20px;
+    background-color:#5FB190 ;
+}
+
+.explorar{
+    grid-area: explorar;  
+}
+p{
+    margin: 10px;
+}
+.fundo{
+    background-color: #51A684;
+    height: 600px;
+}
+
+.explorar__texto{
+    position: relative;
+    top: 50px;
+}
+
+.explorar__texto1 , .explorar__texto2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.explorar__texto1 {
+    font-size: 18px;
+}
+
+.explorar__texto2{
+    font-size: 72px;
+}
+
+.circulos{
+    display: grid;
+    position: relative;
+    top: 50px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 25% 25% 25%;
 }
