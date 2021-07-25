@@ -136,7 +136,7 @@ p{
 }
 .fundo{
     background-color: #51A684;
-    height: 600px;
+    height: 800px;
 }
 
 .explorar__texto{
@@ -164,4 +164,86 @@ p{
     top: 50px;
     grid-template-rows: auto auto auto;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+#encontrar{
+
+    text-align: center;
+    color: white;
+    background-color: #15B089;
+    padding: 80px 10px;
+    border: 3px solid #96dcca;
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    left: 120px;
+    
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+
+#comprar{
+    text-align: center;
+    color: white;
+    background-color: #83CF78;
+    height: 18px;
+    width: 130px;
+    border: 3px solid #a9dda1;
+    border-radius: 50%;
+    padding: 40px 5px;
+    position: relative;
+    margin-top: 80px;
+    top: 40px;
+
+    grid-row: 1/1;
+    grid-column:3/3 ;
+}
+
+#obter{
+    text-align: center;
+    color: white;
+    background-color:#2EC25F ;
+    height: 18px;
+    width: 130px;
+    border: 3px solid #90c5a2;
+    border-radius: 50%;
+    padding: 40px 5px;
+    margin-top: 70px;
+    margin-left: 80px;
+    position: relative;
+    bottom: 20px;
+
+    grid-row: 2/2;
+    grid-column: 3/3;
+}
+
+#conhecer{
+    text-align: center;
+    color: white;
+    background-color:#007350 ;
+    height: 18px;
+    width: 200px;
+    padding: 80px 10px;
+    border: 3px solid #99d6c4 ;
+    border-radius: 50%;
+    position: relative;
+    right: 140px;
+    top: 40px;
+
+    grid-row: 1/1;
+    grid-column: 4/4;
+}
+
+.corpo{
+    grid-area: corpo;
+}
+
+.dividir{
+    height: 20px;
+    background-color: #1A77BE;
+}
+
+.fundo_azul{
+    background-color: #00599D;
+    height: 600px;
 }
