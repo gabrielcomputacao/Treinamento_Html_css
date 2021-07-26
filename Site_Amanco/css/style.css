@@ -245,5 +245,73 @@ p{
 
 .fundo_azul{
     background-color: #00599D;
-    height: 600px;
+    height: 900px;
+}
+.escrito__azul{
+    position: relative;
+    top: 50px;
+}
+
+.escrito__azul p{
+    margin-top: 0;
+    color: white;
+    text-align: center;
+}
+.escrito__azul :first-child{
+    font-size: 18px;
+}
+
+.escrito__azul :nth-child(2){
+    font-size: 72px;
+}
+
+.anuncios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 90px;
+}
+
+.lancamento{
+    border: 1px solid #54728a;
+    border-radius: 2%;
+    height: 500px;
+    background-color: #004789;
+}
+
+.imagens{
+    height: 300px;
+    width: 380px;
+    border-top-left-radius:2% ;
+    border-top-right-radius: 2%;
+}
+
+.anuncio__lancamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.bars svg{
+    height: 40px;
+    width: 40px;
+    color: white;
+}
+
+.bars{
+    border: 4px solid #1A77BE;
+    border-radius: 50%;
+    height: 60px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.anuncios__p{
+    color: white;
+    font-size: 24px;
 }
