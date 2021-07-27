@@ -245,7 +245,7 @@ p{
 
 .fundo_azul{
     background-color: #00599D;
-    height: 900px;
+    height: 1400px;
 }
 .escrito__azul{
     position: relative;
@@ -303,7 +303,7 @@ p{
 }
 
 .bars{
-    border: 4px solid #1A77BE;
+    border: 7px solid #1A77BE;
     border-radius: 50%;
     height: 60px;
     width: 70px;
@@ -314,4 +314,102 @@ p{
 .anuncios__p{
     color: white;
     font-size: 24px;
+}
+
+
+.comercial{
+    border: 1px solid #54728a;
+    border-radius: 2%;
+    height: 500px;
+    background-color: #004789;
+}
+
+.anuncio_comercial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.play{
+    border: 7px solid #1A77BE;
+    border-radius: 50%;
+    height: 60px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.play svg{
+    margin-top: 3px;
+    height: 35px;
+    width: 35px;
+    color: white;
+}
+
+.ralo{
+    border: 1px solid #54728a;
+    border-radius: 2%;
+    height: 500px;
+    background-color: #004789;
+}
+
+.anuncio_ralo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dividir1{
+    height: 20px;
+    background-color: #1A77BE;
+    margin-top: 225px;
+    margin-bottom: 50px;
+}
+
+.comentarios{
+    display: grid;
+    grid-template-areas: 
+    "produto"
+    "downloads"
+    "inovacao"
+    "treinamento"
+    "geral";
+
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.letra{
+    color: white;
+    font-size: 17px;
+}
+
+.letra :first-child{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.produtos{
+    display: flex;
+    grid-area: produto;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+
+.treinamento .letra :last-child{
+    margin-bottom: 60px;
+}
+
+.letras1 a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+
+ [primeiro]{
+    margin-bottom: 20px;
+    font-weight: bold;
 }
