@@ -413,3 +413,55 @@ p{
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+.orbia{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#imagem1{
+    margin-left: 50px;
+    height: 80px;
+    width: 120px;
+}
+
+#imagem2{
+    height: 60px;
+    width: 300px;
+    margin-left: 300px;
+}
+
+.palavras{
+    width: 450px;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 12px;
+    color: #666666;
+}
+
+.direitos{
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 0;
+    color: #666666;
+}
+
+.direitos a{
+    color: #666666;
+    text-decoration: underline;
+}
+
+#direitos__orbia{
+    margin-left: 60px;
+}
+
+#direitos__palavras{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+
