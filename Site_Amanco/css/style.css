@@ -34,9 +34,9 @@ a{
 }
 .links{
     display: flex;
-    position: relative;
     height: 50px;
-    top: 22px;
+    padding-top: 22px ;
+    
 }
 
 
@@ -49,28 +49,32 @@ a{
     font-weight: 800;
 }
 
-.links :last-child{
-    position: relative;
-    bottom: 15px; 
+.links__as{
+    width: 920px;
+}
+
+.links__as :last-child{
+    height: 20px;
+    
 }
 
 svg{
     display: inline-block;
     overflow: visible;
     height: 1em;
-    padding-top: 8px;
 }
 
 .svg-span{
     display: inline-block;
     border: 2px solid transparent;
     padding:  16px;
-    padding-bottom: 4px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     border-radius: 50%;
     color: white;
     height:1em;
-    margin-left: 340px;
     background: #3DA087;
+    
 }
 
 .imagem{
@@ -83,7 +87,7 @@ svg{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height:600px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -466,17 +470,198 @@ p{
 
 
 @media screen and (min-width:0){
-    
+    .links a{
+        display: none;   
+    }
+    .links .icone_bars svg{
+        display: inline-block;
+        color: white;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .imagem-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem__amanco img{
+        width: 370px;
+        height: 100px;  
+    }
+    .imagem__escrita{
+        position: relative;
+        top: 40px;
+    }
+    .imagem__escrita :first-child{
+        width: 500px;
+        font-size: 50px;
+    }
 }
 
 @media screen and (min-width:768px){
+
+    .links a{
+        display: none;   
+    }
+    .links .icone_bars svg{
+        display: inline-block;
+        color: white;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .links{
+        display: flex;
+        justify-content: space-between;
+    }
+    .imagem-principal{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem__amanco img{
+        width: 370px;
+        height: 100px;  
+    }
+    .imagem__escrita{
+        position: relative;
+        top: 40px;
+    }
+    .imagem__escrita :first-child{
+        width: 500px;
+        font-size: 50px;
+    }
+    .circulos__reduzido{
+        display: none;
+    }
     
 }
 
 @media screen and (min-width:992px){
+    .links a{
+        display: inline-block;   
+    }
+    .links .icone_bars svg{
+        display: none;
+        color: white;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .imagem-principal{
+        display: flex;
+        background-image:url(../imagens_normal/tubo-agua-quente.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height:600px;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    
+    .imagem__amanco{
+        display: block;
+        position: relative;
+        top: 65px;
+        height:140px ;
+        
+    }
+    
+    .imagem__amanco img{
+        width: 570px;
+        height: 130px;
+    }
+    
+    .imagem__escrita{
+        position:relative;
+        text-align: center;
+        width: auto;
+        height: 450px;
+        top:70px;
+    }
+    
+    .imagem__escrita :first-child{
+        font-family: 'font';
+        color: white;
+        font-size: 90px;
+        width: 900px;
+        margin: 0;
+    }
+    
+    .imagem__escrita :last-child{
+        color: white;
+        font-family: 'font';
+        font-size: 20px;
+    }
+
     
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:0) and (max-width:770px){
+    .circulos{
+        display: none;
+    }
+    .circulos__reduzido ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .circulos__reduzido ul li{
+        width: 600px;
+        height: 20px;
+        margin-top: 50px;
+        padding: 20px;
+        border: solid 2px;
+        border-radius: 30px 30px 30px 30px;/* deixa redondo as bordas */
     
+    }
+    
+
+    .circulos__reduzido ul :nth-child(1){
+        background-color:#15B089 ;
+    }
+    .circulos__reduzido ul :nth-child(2){
+        background-color:#83CF78 ;
+
+    }
+    .circulos__reduzido ul :nth-child(3){
+        background-color:#2EC25F ;
+    }
+    .circulos__reduzido ul :nth-child(4){
+        background-color:#007350 ;
+    }
+    .explorar__texto1{
+        margin-left: 200px;
+        justify-content: start;
+    }
+    .explorar__texto2{
+        margin-left: 130px;
+        justify-content: start;
+    }
+
+    .comentarios{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        text-align: justify;
+        margin-left: 245px;
+    }
+    .comentarios p{
+        font-size: 26px;
+    }
+    .produtos{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .sub {
+        display: none;
+    }
+
+    
+
 }
+
