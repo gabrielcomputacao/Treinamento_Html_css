@@ -19,3 +19,12 @@
     width: 500px;
 }
 
+.group-radio,.group-select{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.group-radio :first-child{
+    margin-top: 0;
+}

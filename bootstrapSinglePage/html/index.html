@@ -76,7 +76,7 @@
 
     <h3 class="container depoimentos">Depoimentos de clientes</h3>
     <!-- consturindo carousel -->
-    
+
     <div id="carousel-criando" class="carousel slide" data-ride="carousel">
         <!-- indicadores -->
         <ol class="carousel-indicators">
@@ -111,14 +111,75 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
+    <h2>Vídeo Institucional</h2>
+    <div class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section>
+        <h2>Contato</h2>
+        <p>ENtre em contato conosco</p>
+
+        <form action="">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" name="nome" id="nome" placeholder="seu nome">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="seu email">
+                </div>
+            </div>
+            <div class="group-radio">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="pessoa" id="pessoaf" checked>
+                        Pessoa Fisica
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" name="pessoa" id="pessoaj">
+                        Pessoa Juridica
+                    </label>
+                </div>
+                <!-- Bug quando se colocar width 50% de dois inline-block precisa colocar um comentario entre os dois -->
+            </div><!-- 
+            
+            
+            
+            --><select class="form-control group-select">
+                <option value="" selected disabled>selecione um item</option>
+                <option value="">casa</option>
+                <option value="">predio</option>
+                <option value="">cobertura</option>
+            </select>
+
+            <div class="container">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
 
 
+    </section>
 
-
+    <!-- 
+        Sobre o botao no bootstrap
+        .btn é usado para definir o formato do botão, pode-se dizer que dá ao elemento a cara de um botão, porém ainda sem cor. 
+        2) .btn-primary, .btn-danger, .btn-warning, .btn-info, .btn-success, .btn-default: é mais apropriado dizermos que estrs 
+        indicam o comportamento do botão, isto é, se é uma ação positiva, se é uma ação que devemos tomar cuidado ao executá-la (como deletar um campo de um formulário) 
+        3) .btn-lg, .btn-sm, .btn-xs: definem o tamanho do botão, o formato é definido por .btn
+     -->
 
 
 
