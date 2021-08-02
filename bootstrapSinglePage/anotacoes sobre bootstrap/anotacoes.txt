@@ -30,3 +30,19 @@ o primeiro collapsar e outros fecharem assim que um abrir
 
 figure - nova tag do html para envolver figura e titulos de figuras ao inves de div
 e figcaption - colocar legendas nessas imagens dentro da tag figure
+
+sistema DE GRID DO bootstrap
+1) col-xs-* é para dispositivos extra small, ou seja, bem pequenos tais como smartphones.
+
+2) col-sm-* é para dispositivos small, ou seja, apenas pequenos tais como tablets e celulares maiores deitados.
+
+3) col-md-* é para dispositivos médios, tais como tablets maiores e monitores pequenos.
+
+4) col-lg-* é para dispositivos large, ou seja, grandes, tais como computadores desktop com monitores grandes.
+
+
+
+XS: < 768px SM: >= 768px MD: >= 992px LG: >= 1200px
+
+É importante saber para quando formos escrever nossas media queries e se quisermos que elas acompanhem os ajustes de tamanho do bootstrap.
+

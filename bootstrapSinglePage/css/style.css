@@ -2,6 +2,46 @@
     margin-top: 20px;
 }
 
+html,body{
+    height: 100%;
+}
+
+header{
+    background-image: url(../imagens/gta-v.jpg);
+    height: 100%;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.top-banner{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 80%;
+    height: 50%;
+    border-radius: 8px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .3s;/* transicao de subir e descer algo com css */
+    /* 
+    o top e left jogam as bordar para o centro usando 50%, para colcoar no centro a caixa com o conteudo
+    usa-se o transform com a propriedade translate para voltar um pouco a caixa com conteudo
+    para tras tirando as bordas usadas como referenca para alinhya em 50%, entao com o transform
+    voce volta a caixa com conteudo para onde voce quert de fato que ela fique
+    */
+}
+/* position absolut se posiciona com relacao ao primeiro elemento que tiver o position relative */
+
+
 #telegram{
     width: 100%;
 }
@@ -28,3 +68,25 @@
 .group-radio :first-child{
     margin-top: 0;
 }
+
+#botao{
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+footer address:last-child{
+    margin-bottom: 0;
+}
+
+/* @media screen and (min-width:768px){
+    .projetos-responsivo{
+        width: 50%;
+        float: left;
+    }
+} */

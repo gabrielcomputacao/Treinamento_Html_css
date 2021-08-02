@@ -11,12 +11,45 @@
 </head>
 
 <body>
-    <div class="container">
-        <h3>Sobre nos</h3>
-        <img class="img-responsive" src="../imagens/mario-kart.jpg" alt="corrida do mario-kart">
+    <header>
+        <nav class="nav navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigaton</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+    
+                    <a href="#" class="navbar-brand">TopcasaFina Arquitetura</a>
+                </div>
+                <div id="collapse-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#sobre-nos">Sobre nos</a></li>
+                        <li><a href="#projetos">projetos</a></li>
+                        <li><a href="#video">video</a></li>
+                        <li><a href="#contato">contatos</a></li>
+                        <li><a href="#rodape">rodape</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="top-banner">
+            <h1>TopCasaFina</h1>
+            <p>Projetando a casa dos sonhos desde de muito tempo 2000 AC</p>
+            <button class="btn btn-primary btn-lg">Contacte com nos</button>
+        </div>
+    </header>
 
-        <div class="panel-group" id="panel-full">
-            <div class="panel panel-default">
+
+    <div id="sobre-nos" class="container">
+        <h3>Sobre nos</h3>
+        <img class="img-responsive col-sm-6" src="../imagens/mario-kart.jpg" alt="corrida do mario-kart">
+
+        <div class="panel-group " id="panel-full">
+            <div class="panel panel-default col-sm-6">
                 <div class="panel-heading">
                     <h3 data-parent="#panel-full" class="panel-title" data-toggle="collapse"
                         data-target="#primeiro-paragrafo">Desde 1935</h3>
@@ -28,7 +61,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
+            <div class="panel panel-default col-sm-6">
                 <div class="panel-heading">
                     <h3 data-parent="#panel-full" class="panel-title" data-toggle="collapse"
                         data-target="#segundo-paragrafo">Desde 1935</h3>
@@ -40,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default">
+            <div class="panel panel-default col-sm-6">
                 <div class="panel-heading">
                     <h3 data-parent="#panel-full" class="panel-title" data-toggle="collapse"
                         data-target="#terceiro-paragrafo">Desde 1935</h3>
@@ -63,15 +96,46 @@
     </div>
 
     <!-- thumbnail imagem com um texto em baixo -->
-    <section class="container">
-        <h2>Nossos projetos</h2>
-        <figure class="thumbnail">
-            <img id="telegram" src="../imagens/telegram.jpeg" alt="telegram">
-            <figcaption class="caption">
-                <h3>Telegram</h3>
-                <p>O telegram é um ultimo lanbcamento da empresa, feita por um desenvolver</p>
-            </figcaption>
-        </figure>
+    <section id="projetos" class="container">
+        <div class="row">
+            <h2>Nossos projetos</h2>
+            <div class="col-sm-6">
+                <figure class="thumbnail projetos-responsivo">
+                    <img id="telegram" src="../imagens/telegram.jpeg" alt="telegram">
+                    <figcaption class="caption">
+                        <h3>Telegram</h3>
+                        <p>O telegram é um ultimo lanbcamento da empresa, feita por um desenvolver</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure class="thumbnail projetos-responsivo ">
+                    <img id="telegram" src="../imagens/mario-kart.jpg" alt="telegram">
+                    <figcaption class="caption">
+                        <h3>Telegram</h3>
+                        <p>O telegram é um ultimo lanbcamento da empresa, feita por um desenvolver</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure class="thumbnail">
+                    <img id="te" src="../imagens/mario-kart.jpg" alt="telegram">
+                    <figcaption class="caption">
+                        <h3>Telegram</h3>
+                        <p>O telegram é um ultimo lanbcamento da empresa, feita por um desenvolver</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure class="thumbnail projetos-responsivo">
+                    <img id="telegram" src="../imagens/telegram.jpeg" alt="telegram">
+                    <figcaption class="caption">
+                        <h3>Telegram</h3>
+                        <p>O telegram é um ultimo lanbcamento da empresa, feita por um desenvolver</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
     <h3 class="container depoimentos">Depoimentos de clientes</h3>
@@ -114,7 +178,7 @@
     </div>
 
     <h2>Vídeo Institucional</h2>
-    <div class="container">
+    <div id="video" class="container">
         <div class="embed-responsive embed-responsive-16by9">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/3YIXnxA1kqg"
                 title="YouTube video player" frameborder="0"
@@ -123,9 +187,9 @@
         </div>
     </div>
 
-    <section>
+    <section id="contato" class="container">
         <h2>Contato</h2>
-        <p>ENtre em contato conosco</p>
+        <p>Entre em contato conosco</p>
 
         <form action="">
             <div class="form-group">
@@ -158,6 +222,7 @@
             
             
             
+            
             --><select class="form-control group-select">
                 <option value="" selected disabled>selecione um item</option>
                 <option value="">casa</option>
@@ -165,7 +230,7 @@
                 <option value="">cobertura</option>
             </select>
 
-            <div class="container">
+            <div id="" class="container">
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </form>
@@ -181,12 +246,23 @@
         3) .btn-lg, .btn-sm, .btn-xs: definem o tamanho do botão, o formato é definido por .btn
      -->
 
-
-
-
+    <footer id="rodape">
+        <address>
+            <strong>TopCasaFina Arquitetura</strong><br>
+            Rua vergueiro <br>
+            Sao Paulo Sp <br>
+            Tel(11) 33333333
+        </address>
+        <address>
+            Email:bla@hotmail.com
+        </address>
+    </footer>
+    <!-- para importar arquivos colocar nessa sequencia embaixo de jquery e do boot se
+    nao ele nao entende -->
+    
     <script src="../JS jquery/jquery-3.6.0.min.js"></script>
     <script src="../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
+    <script src="../JS/navbar-animation.js"></script>
 </body>
 
 </html>
