@@ -2,3 +2,50 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.img-carousel{
+    height: 450px;
+    /* object-fit: cover; faz a imagem cobrir o pai inteiro */
+    /* nao deixa a imagem ficar achatada com medidas menores que a imagem central */
+    /* object-position: ;  faz a imagem movimentar dentro do pai(container que cobra a imagem reveste)*/
+}
+
+.font-titulo{
+    font-family: 'Pacifico', cursive;
+}
+
+.tamanho{
+    height: 50%;
+}
+
+.textos{
+    text-align: center;
+}
+
+.card-largura{
+    max-width: 18rem;/* ps cards nao podem passar dessa largura */
+}
+
+.titulo{
+    font-family: 'Pacifico',cursive;
+}
+
+.titulo-receita{
+    font-family:'Pacifico',cursive ;
+    color: darkred;
+    margin-top: 20px;
+}
+
+.botao-cor{
+    background-color: darkred;
+    color: white;
+}
+
+.borda-card{
+    border-color: darkred;
+}
+
+.card-imagem{
+    object-fit: cover;
+    height: 200px;
+}

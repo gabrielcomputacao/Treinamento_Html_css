@@ -8,55 +8,143 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-        <title>LandingPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>LandingPage</title>
 </head>
 
 <body>
-
-    <!-- aria sao atributos para acessibilidade,quando precisar ler a tela -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">frutas & frutos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex-navitens" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Receitas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quem somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+    <header>
+        <!-- aria sao atributos para acessibilidade,quando precisar ler a tela -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="titulo navbar-brand" style="color: darkred;" href="#">frutas & frutos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-navitens" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- tabindex=-1 nao deixa o menu ser acessado com a tecla TAB -->
+        </nav>
+        <!-- tabindex=-1 nao deixa o menu ser acessado com a tecla TAB -->
+    </header>
 
-    <h1 class="titulo">Reaproveite melhor os alimentos</h1>
-    <h1>Economize e ganha em saude</h1>
+    <main>
+        <section id="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/gta-v.jpg" class="d-block w-100 img-carousel" alt="gta-v">
+                        <div class="carousel-caption d-none d-md-block tamanho">
+                            <h1 class="font-titulo display-4">Reaproveite melhor os jogos</h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/mario-kart.jpg" class="d-block w-100 img-carousel" alt="mario-kart">
+                        <div class="carousel-caption d-none d-md-block tamanho">
+                            <h1 class="font-titulo display-4">Recietas para economizar e jogar muito</h1>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-    <h2>Recietas para economizar e ganhar saude</h2>
-    <h2>Nossas receitas ajudam voce a aaproveitar melhor os alimentos,economizar,ganhar tempo
-        e praticidade
-    </h2>
+
+            <h2 class="textos titulo-receita">Recietas para economizar e ganhar saude</h2>
+            <p class="textos text-secondary">Nossas receitas ajudam voce a aaproveitar melhor os
+                alimentos,economizar,ganhar
+                tempo
+                e praticidade
+            </p>
+        </section>
+
+        <section class="container" id="receitas">
+            <div class="row justify-content-center">
+                <article class="card borda-card card-largura p-0 m-4 col-12 col-xl-3">
+                    <img src="../img/gta-v.jpg" class="card-img-top card-imagem" alt="gta-v">
+                    <div class="card-body">
+                        <h5 class="card-title">Tigela abacate</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+                <article class="card borda-card   card-largura p-0 m-4 col-12 col-xl-3">
+                    <img src="../img/mario-kart.jpg" class="card-img-top card-imagem" alt="mario-kart">
+                    <div class="card-body">
+                        <h5 class="card-title">Mario card</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+                <article class="card borda-card  card-largura p-0 m-4 col-12 col-xl-3">
+                    <img src="../img/trello.jpg" class="card-img-top card-imagem" alt="trello">
+                    <div class="card-body">
+                        <h5 class="card-title">Trello</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+                <article class="card borda-card card-largura p-0 m-4 col-12 col-xl-3">
+                    <img src="../img/telegram.jpeg" class="card-img-top card-imagem" alt="telegram">
+                    <div class="card-body">
+                        <h5 class="card-title">Trello</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+                <article class="card borda-card card-largura p-0 m-4 col-12 col-xl-3">
+                    <img src="../img/mario-kart.jpg" class="card-img-top card-imagem" alt="telegram">
+                    <div class="card-body">
+                        <h5 class="card-title">Trello</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+                <article class="card borda-card card-largura p-0 col-12 m-4 col-xl-3">
+                    <img src="../img/mario-kart.jpg" class="card-img-top card-imagem" alt="telegram">
+                    <div class="card-body">
+                        <h5 class="card-title">Trello</h5>
+                        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
+                        <a href="#" class="btn botao-cor ">Veja Receita</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
 
 
-    <img src="" alt="">
-    <h3>tigela abacate</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
-
-    <img src="" alt="">
-    <h3>Salada de Kiwi</h3>
-    <p>Receita refrescante e cheia de vitaminas para o seu caf[e da manhã!</p>
 
 
 

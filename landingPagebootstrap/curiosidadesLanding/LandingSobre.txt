@@ -12,3 +12,11 @@ e serviços oferecidos na rede.
 Contudo a mesma plataforma online exige o preenchimento de dados para finalmente ter 
 acesso ao que deseja.
 
+HTML Semantico
+
+Tag Main para mostrar o conteudo principal
+Section separa o conteudo das partes do texto do HTML
+Figure tags para agrupar imagens
+
+
+classes criadas sobreescrevem as do bootstrap
