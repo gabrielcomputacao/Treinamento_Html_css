@@ -17,9 +17,9 @@
 <body>
     <header>
         <!-- aria sao atributos para acessibilidade,quando precisar ler a tela -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <a class="titulo navbar-brand" style="color: darkred;" href="#">frutas & frutos</a>
+                <a class="titulo navbar-brand cor-especial"  href="#">frutas & frutos</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,8 @@
                             <a class="nav-link" href="#">Quem somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal-contato"
+                                href="#">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -88,8 +89,8 @@
                 e praticidade
             </p>
         </section>
-
-        <section class="container" id="receitas">
+        <!-- container fluid vem sem a margin padrao do container sosinho -->
+        <section class="container-fluid bg-light" id="receitas">
             <div class="row justify-content-center">
                 <article class="card borda-card card-largura p-0 m-4 col-12 col-xl-3">
                     <img src="../img/gta-v.jpg" class="card-img-top card-imagem" alt="gta-v">
@@ -144,7 +145,42 @@
 
     </main>
 
+    <footer class="p-3 bg-secondary">
+        <p class="text-light m-0 text-center">Contato: <a href="#" class="text-light">gabrielcomputacao@outlook.com</a></p>
+    </footer>
 
+    <!-- Modal 
+    Existe um tag para caixas de dialogo DIALOG,melhora semanticamente
+    -->
+    <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formulario</h5>
+                </header>
+                <main class="modal-body">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                      </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Escreve sua opiniao</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                </main>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn botao-cor">Salvar</button>
+                </footer>
+            </dialog>
+        </div>
+    </div>
 
 
 
